@@ -30,7 +30,7 @@ jobs:
         aws eks --region $EKS_REGION update-kubeconfig --name $EKS_CLUSTER
         
    
-   # Set up istio
+   ## Set up istio
     - name: Set up Istio
       run: |-
        curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.7.3 sh -
